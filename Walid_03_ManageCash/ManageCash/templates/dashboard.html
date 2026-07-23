@@ -1,0 +1,46 @@
+{% extends 'master/base.html' %}
+
+{% block bodyContent %}
+
+    <h1 class="py-3">Welcome, {{request.user.username}}!</h1>
+
+    <div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <div class="card text-bg-dark mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Total Cash Added</h5>
+                    <p class="fs-1">{{total_cash_added}}</p>
+                    <br>
+                    <br>
+                    <a href="{% url 'addAddCash' %}" class="btn btn-success">Add Cash</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card text-bg-warning mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Total Expenses</h5>
+                    <p class="fs-1">{{total_expense}}</p>
+                    <br>
+                    <br>
+                    <a href="{% url 'addExpense' %}" class="btn btn-danger">Add Expense</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card text-bg-success mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Net Amount</h5>
+                    <p class="fs-1">{{net_amount}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+{% endblock bodyContent %}

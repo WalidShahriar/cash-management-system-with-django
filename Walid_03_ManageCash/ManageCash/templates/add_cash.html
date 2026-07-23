@@ -1,0 +1,24 @@
+{% extends 'master/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block bodyContent %}
+
+    <h1 class="py-3">Add Cash</h1>
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {{form_data | crispy}}
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-warning form-control">Add Cash</button>
+        </div>
+        <div class="mb-3">
+            <a href="{% url 'dashboard' %}" class="btn btn-success form-control">Discard</a>
+        </div>
+    </form>
+
+
+{% endblock bodyContent %}

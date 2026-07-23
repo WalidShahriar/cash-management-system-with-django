@@ -1,0 +1,23 @@
+{% extends 'master/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block bodyContent %}
+
+    <h1 class="py-3">Register</h1>
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {{form_data | crispy}}
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success form-control">Register</button>
+        </div>
+        <div class="mb-3">
+            <a href="{% url 'login_view' %}" class="btn btn-primary form-control">Login</a>
+        </div>
+    </form>
+
+{% endblock bodyContent %}
