@@ -1,4 +1,5 @@
 # Personal Cash Management System
+<img width="1872" height="946" alt="dashboard" src="https://github.com/user-attachments/assets/3d644597-03e6-4798-8bb3-8d7177788345" />
 
 A basic personal cash management web application built with **Django** and **Bootstrap**. The application allows registered users to record their income and expenses, review their transactions, and manage their personal profile through a simple and responsive interface.
 
@@ -218,15 +219,6 @@ Update the structure above if your actual project or folder names are different.
 - Email-based password reset
 - Pagination for transaction history
 - Deployment to a cloud hosting platform
-
-## Screenshots
-
-<!-- Add screenshots of the project to a folder such as `screenshots/`, then include them here. -->
-
-```markdown
-![Login Page](./screenshots/login.png)
-![Dashboard](./screenshots/dashboard.png)
-```
 
 ## Author
 
