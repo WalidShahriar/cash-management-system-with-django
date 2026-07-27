@@ -224,8 +224,8 @@ Update the structure above if your actual project or folder names are different.
 <!-- Add screenshots of the project to a folder such as `screenshots/`, then include them here. -->
 
 ```markdown
-![Login Page](screenshots/login.png)
-![Dashboard](screenshots/dashboard.png)
+![Login Page](./screenshots/login.png)
+![Dashboard](./screenshots/dashboard.png)
 ```
 
 ## Author
